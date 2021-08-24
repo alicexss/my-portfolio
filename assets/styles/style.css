@@ -124,7 +124,7 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  background: url(../images/brilhos.png);
+  background: url(../images/header.png);
 }
 
 #header.scroll {
@@ -176,6 +176,7 @@ nav .menu {
   visibility: hidden;
   top: -20rem;
   transition: 0.2s;
+  margin-left: auto;
 }
 
 nav .menu ul {
@@ -186,7 +187,7 @@ nav.show .menu {
   opacity: 1;
   visibility: visible;
 
-  background: var(--body-color);
+  background: white;
 
   height: 100vh;
   width: 100vw;
@@ -239,6 +240,7 @@ nav.show div.icon-close {
 
 #home .image {
   position: relative;
+  width: 600px;
 }
 
 #home .image::before {
@@ -274,6 +276,15 @@ nav.show div.icon-close {
 
 #home .text p {
   margin-bottom: 2rem;
+}
+
+#home .text .cv {
+  margin-left: 1rem;
+  color: var(--base-color);
+  font-size: 0.7rem;
+  display: flex;
+  padding: 0.5rem;
+  font-weight: 700;
 }
 
 /* ***************************** */
@@ -334,8 +345,12 @@ nav.show div.icon-close {
 }
 
 .card .title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 0.75rem;
+}
+
+.card img {
+  width: 3rem;
 }
 
 /* Testemunhas */
@@ -449,7 +464,7 @@ footer i {
 }
 
 footer .social a {
-  margin-right: 2rem;
+  margin-right: 1rem;
   transition: 0.3s;
   display: inline-block;
 }
